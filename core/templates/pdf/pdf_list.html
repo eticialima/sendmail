@@ -1,0 +1,29 @@
+{% extends 'base/_base.html' %}
+{% block title %}Sendmail PDF File List{% endblock %} 
+{% block content %}
+<h4>Account E-mails</h4>
+ <table class="table">
+    <thead>
+        <tr>
+            <th>#</th>
+            <th>Name</th>
+            <th>E-mail</th> 
+            <th>Gener</th> 
+            <th>View</th>
+            <th>Delete</th>
+        </tr>
+    </thead>
+    {% for objects in object_list %}
+    <tbody>
+        <tr>
+            <th>{{ objects.id }}</td>
+            <th>{{ objects.name }}</td>
+            <th>{{ objects.mail }}</td> 
+            <th>{{ objects.sexo }}</td> 
+            <th><a href="#"><i class="fa fas fa-eye" style="color:#f7b100;"></i></a></td> 
+            <th><a href="#"><i class="fas fa-trash" style="color:#c20000;"></i></a></td>
+        </tr>
+    </tbody>
+    {% endfor %}
+</table>
+{% endblock %} 

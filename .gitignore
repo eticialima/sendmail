@@ -1,0 +1,11 @@
+### Django ###
+env/
+*.pyc 
+__pycache__/
+*.py[cod]
+__pycache__
+local_settings.py 
+venv/
+.env
+db.sqlite3
+media/

@@ -1,0 +1,10 @@
+{% extends 'base/_base.html' %}
+{% block title %}Sendmail PDF File{% endblock %}
+{% block content %}
+<form method="POST" class="form" autocomplete="off">
+    <h4>Sendmail PDF File</h4>
+    {% csrf_token %}
+    {{form.as_p}}
+    <button type="submit" class="btn btn-success">Save</button>
+</form>
+{% endblock %}

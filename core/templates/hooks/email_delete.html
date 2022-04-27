@@ -1,0 +1,11 @@
+{% extends 'base/_base.html' %}
+{% block title %}Delete{% endblock %} 
+{% block content %}
+<form method="POST">
+    {% csrf_token %}
+    <h4>Name: {{ objects.nome }}</h4>
+    <p>Delete info</p> 
+    <button type="submit" class="btn btn-primary">yes</button>
+    <div class="btn btn-danger" onclick="history.back();">back</div>
+</form> 
+{% endblock %}
