@@ -4,7 +4,7 @@ CairoSVG==2.5.2
 cffi==1.15.0
 cssselect2==0.6.0
 defusedxml==0.7.1
-Django==4.0.4
+Django==4.0.6
 django-cors-headers==3.11.0
 django-decorator-include==3.0
 django-dynamic-formsets==0.0.8
